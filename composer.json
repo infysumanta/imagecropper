@@ -1,0 +1,32 @@
+{
+  "name": "sumantablog/imagecropper",
+  "description": "Integrate Cropper into laravel-superadmin",
+  "type": "library",
+  "keywords": ["laravel-admin", "extension", "cropper", "image"],
+  "homepage": "https://github.com/sumantablog/imagecropper",
+  "license": "MIT",
+  "authors": [{
+    "name": "Sumanta Kabiraj",
+    "email": "sumantablog@gmail.com"
+  }],
+  "require": {
+    "php": ">=7.0.0",
+    "sumantablog/laravel-superadmin": "^1.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sumantablog\\Cropper\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Sumantablog\\Cropper\\CropperServiceProvider"
+      ]
+
+    }
+  }
+}
